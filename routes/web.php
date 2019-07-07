@@ -22,3 +22,5 @@ Route::get('todos',[
 Route::post('/upload',[
     'uses'=>'TodoController@upload'
 ]);
+Route::get('/role','RoleManagerController@index');
+Route::post('/save-role','RoleManagerController@save');

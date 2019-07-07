@@ -42,3 +42,11 @@ $factory->define(\App\Comment::class, function (Faker $faker) {
 
     ];
 });
+
+$factory->define(\App\Role::class, function (Faker $faker) {
+    return [
+
+      'name'=>$faker->sentence(1),
+
+    ];
+});
